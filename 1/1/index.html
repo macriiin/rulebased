@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Path Expert System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="question-container">
+      <div class="header">
+        <h2 id="question-number"></h2>
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <h3 id="question"></h3>
+      <div class="answer-options"></div>
+      <div class="help-section">
+        <button class="help-btn" onclick="toggleHelp()">Need Help?</button>
+        <p id="help-text" class="hidden"></p>
+      </div>
+    </div>
+    <div class="card hidden" id="result-container">
+      <h2>Recommendation</h2>
+      <div id="career-icon"></div>
+      <div id="result-text"></div>
+      <div id="career-details"></div>
+      <button class="restart-btn" onclick="restart()">Restart</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
