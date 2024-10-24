@@ -1,0 +1,150 @@
+/* Reset and Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container and Card Styling */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  
+  /* Question and Answer Styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  h2, h3 {
+    margin: 0;
+    padding-bottom: 20px;
+    color: #333;
+  }
+  
+  .answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .answer-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .answer-btn:hover {
+    background: #357abd;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Help Section */
+  .help-section {
+    margin-top: 20px;
+  }
+  
+  .help-btn {
+    background-color: #e0e4e8;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #help-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    background-color: #e0e4e8;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #4a90e2;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Fade Animations */
+  .fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Result and Restart Button */
+  .restart-btn {
+    background-color: #f57c00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .restart-btn:hover {
+    background-color: #e06800;
+  }
+  
+  /* Career Icon */
+  .career-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Custom Icons for Career Paths */
+  .tech-icon::before {
+    content: '💻';
+  }
+  
+  .creative-icon::before {
+    content: '🎨';
+  }
+  
